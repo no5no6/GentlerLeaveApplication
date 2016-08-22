@@ -1,0 +1,16 @@
+{
+  "name": "geekScript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuan.yang@kuyun.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "cron": "~1.1.0",
+    "lodash": "~4.15.0",
+    "nodemailer": "~2.5.0"
+  }
+}
