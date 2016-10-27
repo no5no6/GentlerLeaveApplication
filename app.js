@@ -5,7 +5,7 @@ var reasons    = require('./reasons').reasons;
 
 var job = new cronJob('00 50 09 * * 0-6', function(){
   exec("who -q", function(error, stdout, stderr){
-    if(stdout.indexOf('yy') === -1) process.exit(1);
+    if(stdout.indexOf('yy') !== -1) return;
 
     var transporter = nodemailer.createTransport('smtps://username%40kuyun.com:password@smtp.exmail.qq.com');
 
